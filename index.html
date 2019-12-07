@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GoodWork Calendar</title>
+</head>
+<body onload="renderCalendar()">
+    <div class="wrapper">
+        <div class="calendar-wrapper">
+            <div class="total">
+                <div class="today-total">
+                    <h2 id="current-day">день месяца</h2>
+                    <h6 class="mb-5" id="current-weekday">день недели</h6>
+                <div id="selected">Здесь будет месяц и год те, что на календаре</div>
+                <div class="prev btn btn-outline-dark" onclick="moveDate('prev')"><span>&#10094</span></div>
+                <div class="btn btn-outline-dark" onclick="moveDate('today')"><span>сегодня</span></div>
+                <div class="next btn btn-outline-dark" onclick="moveDate('next')"><span>&#10095</span></div>
+                </div>
+            </div>
+            <div class="calendar">
+                <div class="weekdays">
+                    <div>Пн</div>
+                    <div>Вт</div>
+                    <div>Ср</div>
+                    <div>Чт</div>
+                    <div>Пт</div>
+                    <div>Сб</div>
+                    <div>Вс</div>
+                </div>
+                <div class="days"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

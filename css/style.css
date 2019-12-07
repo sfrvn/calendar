@@ -1,0 +1,86 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #343a40; /*#e5e5e5*/
+}
+
+.calendar-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 1362px;
+    height: 1207px;
+    margin-top: 113px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 1%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* просто дрочево */
+}
+
+.calendar {
+    width: 959px; 
+    height: 751px; /* +66px за дни недели */
+}
+
+.total {
+    width: 358px;
+    margin-right: 25px;
+    margin-left: -30px;
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 20px; /* на 28:15 просто пиздец */
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.days div {
+    width: 14.28%;
+    height: 137px;
+    font-size: 28px;
+    font-weight: 300;
+    padding: 9px;
+    /* border: rgb(0, 0, 0) solid 0.5px; */
+    transition: all 0.4s;
+}
+
+.days div:hover {
+    background-color: #343a40;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* просто дрочево */
+}
+
+.prev-month-day, .next-month-day {
+    color: #e5e5e5;
+}
+
+.prev-month-day:hover, .next-month-day:hover {
+    color: black;
+}
+
+.today, .month-day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    width: 38px;
+}
+
+.today {
+    background-color: #343a40; /*#629bdd*/
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px black; /*#D0645F*/
+}
+
+.today-total { /**/
+    margin-left: 30px;
+}
